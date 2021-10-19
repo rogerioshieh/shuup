@@ -2,6 +2,8 @@ version: "3.7"
 
 services:
   shuup:
+    labels:
+      shipyard.route: '/'
     build:
       context: .
     ports:
